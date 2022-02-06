@@ -1,0 +1,42 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(7,75px);
+    height: 1000px;
+    position: fixed;
+    top: 100px;
+    right: 100px;
+}
+
+.box{
+    color: white;
+    min-height: 50px;
+    min-width: 150px;
+}
+.first{
+    background-color: cyan;
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    position: relative;
+    left: 50px;
+}
+.second{
+    background-color: brown;
+    grid-column: 3 / 3;
+    grid-row: 1 / 4;
+    position: relative;
+    right: 2px;
+    bottom: 50px;
+}
+.third{
+    background-color: red;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 3;   
+}
+.fourth{
+    background-color: blue;
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 3;
+    position: relative;
+    top: 1px;
+}
